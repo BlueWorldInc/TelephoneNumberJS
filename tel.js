@@ -19,22 +19,16 @@ var oldArbre = arbreList[0];
 for (var i = 1; i < t[0].length; i++) {
     newArbre = new Arbre(t[0].charAt(i));
     oldArbre.addSon(newArbre);
-    arbreList.push(newArbre);
     oldArbre = newArbre;
 }
 
 
-
-
-
-
 arbreList.push(new Arbre(t[1].charAt(0)));
-var oldArbre = arbreList[arbreList.length -1];
+var oldArbre = arbreList[1];
 
 for (var i = 1; i < t[1].length; i++) {
     newArbre = new Arbre(t[1].charAt(i));
     oldArbre.addSon(newArbre);
-    arbreList.push(newArbre);
     oldArbre = newArbre;
 }
 
